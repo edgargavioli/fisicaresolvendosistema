@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.S.I.I.(Solucionador de Sistemas Inenarravelmente Incrível)</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" type="imagem/x-icon" href="fusca-roxo.png" />
+  </head>
+
+  <body id="body" class="box">
+    <p class="autores" style="font-weight: lighter; font-size: 16px;">Feito por: Gustavo Cortelassi, Edgar Gavioli, Lucas Rech e Victor Neves</p>
+    <p class="p1">Solucionador de Sistemas Inenarravelmente Incrível</p>
+
+    <div class="box">
+      <p class="instrucoes">
+        1. Digite o numero de variáveis no campo de texto abaixo.<br />
+        2. Clique em "Montar Sistema" para montar o escopo para o
+        preenchimento.<br />
+        3. Digite em cada campo os valores das variáveis i1, i2, i3... e, por
+        final, o número<br />
+        4. Clique em calcular, e o resultado será mostrado abaixo.<br />
+        ***Para refazer a operação atualize a página***
+      </p>
+    </div>
+    <a>Se quiser ver o passo a passo na tela ative a checkbox a baixo (obs: pode
+      causar travamentos)</a>
+    <br/>
+    <a><input type="checkbox" id="mostrarTela" /> Passo a passo</a>
+    <p>Insira a quantidade de variáveis:</p>
+    <input type="number" id="numeroMatriz" />
+
+    <button onclick="criarMatriz()">MONTAR O SISTEMA</button>
+    <p>Sistema:</p>
+    <script src="index.js"></script>
+    <button onclick="passandoNumerosParaMatriz(matriz)" class="botaoCalcula">
+      CALCULAR
+    </button>
+    <p>Resolução:</p>
+  </body>
+</html>
